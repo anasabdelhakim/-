@@ -5,8 +5,6 @@
   outline: none;
   background: var(--body-color);
   border-radius: 12px;
-  transition: box-shadow 0.3s ease-in-out, var(--main-transition);
-  box-shadow: var(--boxSizing-color);
 }
 .Intro .card {
   display: grid;
