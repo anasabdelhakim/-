@@ -56,8 +56,6 @@ input:-webkit-autofill:hover {
   --section-color: white;
   --input-selection-background: rgb(232, 240, 254);
   --tags-color: #111827;
-  --boxSizing-color: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.1),
-    inset -6px -6px 10px 0 rgba(217, 217, 217, 0.6);
   --danger--color: #ff3150;
   --secoundery-color: #ffb003;
   --third-color: #39b385;
