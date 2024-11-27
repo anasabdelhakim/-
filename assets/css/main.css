@@ -418,12 +418,13 @@ footer .container p {
     width: 100%;
     text-align: center;
   }
-}
-
-@media (max-width: 576px) {
   footer .container {
     min-height: 400px;
   }
+}
+
+@media (max-width: 576px) {
+  
   .slider-content-wrapper-box .course-content-details {
     flex-direction: column;
     justify-content: center;
