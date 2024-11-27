@@ -320,8 +320,20 @@ p {
 }
 
 @media (max-width: 576px) {
-  .Sign-Left p{
-    font-size: 13px;
+  .Sign-Left .password-forget,
+  .Sign-Left .password-account {
+    font-size: 11px;
+  }
+
+  .Sign-Left .password-forget a,
+  .password-account a {
+    font-size: 12px;
+  }
+  .sign-in-join {
+    font-size: 12px;
+  }
+  .Sign-Left p {
+    font-size: 11px;
   }
   .Sign-Left.up .input-container {
     grid-template-columns: 1fr;
