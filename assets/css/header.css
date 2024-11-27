@@ -369,7 +369,7 @@ header .container {
 
 @media (max-width: 768px) {
   .Landing-page {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .Landing-page .container {
     padding-top: var(--section-inner-space);
