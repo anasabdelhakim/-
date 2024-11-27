@@ -69,12 +69,29 @@ boxes.forEach((box, index) => {
   box.style.display = index < currenListen ? "inline-block" : "none";
 });
 let profile = document.querySelectorAll(".sign-form");
+
+// Active btn on mobile screen
 document.querySelectorAll(".user-btn").forEach((element) => {
-  element.onclick = () => {
+  element.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
     profile.forEach((sign) => {
-      sign.classList.toggle("active");
+      sign.classList.toggle("active"); // Toggle the "active" class
     });
-  };
+  });
+});
+
+// Add click event listener to each sign element
+profile.forEach((sign) => {
+  sign.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+  });
+});
+
+// Add a global click listener to the document
+document.addEventListener("click", () => {
+  profile.forEach((sign) => {
+    sign.classList.remove("active"); // Remove the "active" class
+  });
 });
 
 showMoreButton.addEventListener("click", function () {
