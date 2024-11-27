@@ -320,6 +320,9 @@ p {
 }
 
 @media (max-width: 576px) {
+  .Sign-Left p{
+    font-size: 13px;
+  }
   .Sign-Left.up .input-container {
     grid-template-columns: 1fr;
   }
