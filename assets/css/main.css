@@ -5,6 +5,7 @@
   outline: none;
   background: var(--body-color);
   border-radius: 12px;
+  transition: var(--main-transition);
 }
 .Intro .card {
   display: grid;
