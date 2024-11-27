@@ -352,23 +352,8 @@ header .container {
   }
 }
 @media (max-width: 992px) {
-  .Landing-page {
+   .Landing-page {
     height: auto;
-  }
-  .Landing-page_right h2 {
-    font-size: 2.5rem;
-  }
-  .Landing-page_right p {
-    font-size: 1rem;
-  }
-  .Landing-page .Landing-btns button {
-    font-size: 0.675rem;
-    padding: 6px 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Landing-page {
     margin-top: 50px;
   }
   .Landing-page .container {
@@ -407,7 +392,9 @@ header .container {
     font-size: 0.875rem;
     padding: 8px 20px;
   }
+}
 
+@media (max-width: 768px) {
   .navbar__signin-btn,
   .navbar__signup-btn {
     display: none;
