@@ -448,7 +448,7 @@ header .container {
     max-width: 100%;
   }
   .Landing-page .container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 130px);
     gap: 0px;
     padding-top: 50px;
   }
