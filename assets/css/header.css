@@ -384,7 +384,7 @@ header .container {
 
 @media (max-width: 768px) {
   .Landing-page_right h2 {
-    font-size: 3rem;
+    font-size: 2.625rem;
     max-width:100%;
   }
   .Landing-page_right p {
