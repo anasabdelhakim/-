@@ -423,8 +423,7 @@ header .container {
 
 @media (max-width: 768px) {
   .Landing-page_right h2 {
-    font-size: 2.25rem;
-    max-width:100%;
+    font-size: 3.5rem;
   }
   .Landing-page_right p {
     font-size: 1rem;
@@ -445,10 +444,10 @@ header .container {
 }
 
 @media (max-width: 576px) {
-    .Landing-page_right h2 {
-    font-size: clamp(2.5rem, 5vw, 3rem);
-    white-space: nowrap;
-    }
+  .Landing-page_right h2 {
+    font-size: clamp(40px, 12vw, 70px);
+    max-width: 100%;
+  }
   .Landing-page {
     margin-top: 15px;
   }
