@@ -446,6 +446,9 @@ footer .container p {
 }
 
 @media (max-width: 576px) {
+  .slider-content-wrapper {
+    grid-template-columns: 1fr;
+  }
   footer .container {
     padding: 50px 0;
   }
