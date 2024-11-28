@@ -392,7 +392,9 @@ header .container {
     height: auto;
   }
   .Landing-page .container {
-    padding-top: var(--section-inner-space);
+    padding-top: 50px;
+    gap: 50px;
+    flex-direction: column-reverse;
   }
   .Landing-page_left {
     width: 100%;
@@ -407,11 +409,7 @@ header .container {
     text-align: center;
     gap: 20px;
   }
-  .Landing-page .container {
-    padding-top: 50px;
-    gap: 50px;
-    flex-direction: column-reverse;
-  }
+
   .Landing-page_right .Landing-btns {
     width: 100%;
     flex-direction: column;
