@@ -7,11 +7,6 @@
   border-radius: 12px;
   transition: var(--main-transition);
 }
-@media (max-width: 576px) {
-  .Intro .Section-title {
-    margin: 0 auto 50px;
-  }
-}
 .Intro .card {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
