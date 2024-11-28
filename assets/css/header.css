@@ -407,8 +407,12 @@ header .container {
 }
 
 @media (max-width: 576px) {
+  .Landing-page {
+    margin-top: 25px;
+  }
   .Landing-page_right h2 {
-    font-size: 100%;
+    font-size: 100vw;
+    padding:0 10px;
   }
   .Landing-page .container {
     height: calc(100vh - 80px);
@@ -419,4 +423,5 @@ header .container {
   .Landing-page_left {
     display:none;
     }
+  
 }
