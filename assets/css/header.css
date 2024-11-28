@@ -410,10 +410,6 @@ header .container {
   .Landing-page {
     margin-top: 15px;
   }
-  .Landing-page_right h2 {
-    font-size: 100vw;
-    padding: 0 10px;
-  }
   .Landing-page .container {
     height: calc(100vh - 80px);
     justify-content: center;
@@ -423,5 +419,4 @@ header .container {
   .Landing-page_left {
     display:none;
     }
-  
 }
