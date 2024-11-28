@@ -80,7 +80,8 @@ body {
   overflow-x: hidden;
   transition: var(--main-transition);
   font-family: "Noto Kufi Arabic", sans-serif;
-  font-weight: bold;
+  font-weight: bold;    
+  font-display: swap;
 }
 
 html {
