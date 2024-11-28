@@ -390,10 +390,10 @@ header .container {
   .Landing-page_right p {
     font-size: 1rem;
   }
-  .Landing-page .Landing-btns button {
-    font-size: 0.875rem;
-    padding: 8px 20px;
-  }
+.Landing-page .Landing-btns button {
+  font-size: 1.125rem;
+  padding: 10px 25px;
+}
   
   .navbar__signin-btn,
   .navbar__signup-btn {
