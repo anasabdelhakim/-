@@ -149,7 +149,7 @@ html {
   width: 400px;
 }
 
-@media (max-width: 476px) {
+@media (max-width: 576px) {
   .Section-title {
     margin: 50px 0;
   }
