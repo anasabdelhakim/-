@@ -392,7 +392,7 @@ header .container {
 @media (max-width: 992px) {
    .Landing-page {
     height: auto;
-    margin-top: 50px;
+    margin-top: var(--section-outer-space);
   }
   .Landing-page .container {
     padding-top: var(--section-inner-space);
