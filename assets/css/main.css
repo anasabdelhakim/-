@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 20px;
-  padding: 30px 10px;
+  padding: 30px;
 }
 .Intro .card .card-box {
   outline: none;
@@ -55,10 +55,6 @@
   color: var(--danger--color);
   background-color: transparent;
 }
-.Intro .card .card-box1 .card-box-btn:active {
-  color: var(--danger--color);
-  background-color: transparent;
-}
 .Intro .card .card-box1 .card-box-btn i {
   font-size: 18px;
   color: #111827;
@@ -67,9 +63,7 @@
 .Intro .card .card-box1 .card-box-btn:hover i {
   color: var(--danger--color);
 }
-.Intro .card .card-box1 .card-box-btn:active i {
-  color: var(--danger--color);
-}
+
 .Intro .card .card-box h3 {
   font-size: 25px;
   margin: 15px 0;
@@ -128,16 +122,16 @@
     font-size: 17px;
   }
   .Intro .card .card-box i {
-    font-size: 22px;
-  }
-  .Intro .card .card-box1 h1 {
     font-size: 20px;
   }
+  .Intro .card .card-box1 h1 {
+    font-size: 18px;
+  }
   .Intro .card .card-box h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .Intro .card .card-box p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .slider-content {
@@ -168,15 +162,6 @@
   transform: translateX(-50%) scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
 }
-.slider-content-wrapper-box:active .image-content img {
-  transform: scale(1.05);
-  filter: saturate(200%);
-}
-.slider-content-wrapper-box:active .course-content {
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
-}
-
 .slider-content-wrapper-box .course-content {
   position: relative;
   width: 90%;
@@ -308,10 +293,7 @@
   color: var(--third-color);
   background-color: transparent;
 }
-.show-more:active {
-  color: var(--third-color);
-  background-color: transparent;
-}
+
 /*Last Section*/
 .about-teacher {
   display: flex;
@@ -371,17 +353,13 @@
 .about-teacher .Landing-btn-book:hover {
   transform: scale(1.15);
 }
-.about-teacher .Landing-btn-book:active {
-  transform: scale(1.15);
-}
+
 /*Start Footer*/
 footer {
-  height: 100%;
   background-color: #288ec7;
 }
 footer .container {
-  padding: var(--section-outer-space) 0;
-  height: 100%;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -424,9 +402,7 @@ footer .container p {
 .links-social img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
 }
-.links-social img:active {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
-}
+
 @media (max-width: 992px) {
   .about-teacher .container {
     margin: 0 10px 50px;
@@ -442,7 +418,6 @@ footer .container p {
     width: 100%;
     text-align: center;
   }
-  
 }
 
 @media (max-width: 576px) {
@@ -450,7 +425,7 @@ footer .container p {
     grid-template-columns: 1fr;
   }
   footer .container {
-    padding: 50px 0;
+    min-height: 400px;
   }
   .slider-content-wrapper-box .course-content-details {
     flex-direction: column;
