@@ -2,7 +2,7 @@
 header {
   width: 100%;
   height: 80px;
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: var(--body-color);
   z-index: 1000;
@@ -70,7 +70,6 @@ header .sign-form {
 .sign-up-active:active span {
   color: var(--danger--color);
 }
-
 
 .sign-in-active {
   border: 2px solid var(--secoundery-color);
@@ -277,7 +276,6 @@ header .container {
 
 .Landing-page {
   height: calc(100vh - 80px);
-  margin-top: var(--section-outer-space);
 }
 .Landing-page .container {
   display: flex;
@@ -390,9 +388,8 @@ header .container {
   }
 }
 @media (max-width: 992px) {
-   .Landing-page {
+  .Landing-page {
     height: auto;
-    margin-top: var(--section-outer-space);
   }
   .Landing-page .container {
     padding-top: var(--section-inner-space);
@@ -408,7 +405,7 @@ header .container {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:20px;
+    gap: 20px;
   }
   .Landing-page .container {
     padding-top: 50px;
@@ -428,11 +425,11 @@ header .container {
   .Landing-page_right p {
     font-size: 1rem;
   }
-.Landing-page .Landing-btns button {
-  font-size: 1.125rem;
-  padding: 10px 25px;
-}
-  
+  .Landing-page .Landing-btns button {
+    font-size: 1.125rem;
+    padding: 10px 25px;
+  }
+
   .navbar__signin-btn,
   .navbar__signup-btn {
     display: none;
@@ -445,20 +442,16 @@ header .container {
 
 @media (max-width: 576px) {
   .Landing-page_right h2 {
-    font-size: clamp(1rem, 11.5vw, 6rem);
+    font-size: clamp(1rem, 11.5vw, 3rem);
     max-width: 100%;
-  }
-  .Landing-page {
-    margin-top: 15px;
   }
   .Landing-page .container {
     height: calc(100vh - 80px);
     justify-content: center;
     gap: 0px;
-    padding-top: 0;
+    padding-top: 15px;
   }
   .Landing-page_left {
     display: none;
   }
 }
-
