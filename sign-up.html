@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
+    
+    <!-- Preconnect to fonts.google.com for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload fonts to speed up their rendering -->
     <link
       href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
-    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image (1).webp" />
-    <link rel="stylesheet" rel="preload" href="assets/css/all.min.css" />
+
+    <!-- Favicon with WebP format for smaller size -->
+    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image.webp" type="image/webp" />
+
+    <!-- Consolidate and defer CSS loading for better performance -->
+    <link rel="preload" href="assets/css/all.min.css" as="style" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/webfonts/" />
-    <link rel="stylesheet" href="assets/css/sign-in-up.css" />
+
+    <!-- Lazy load the sign-in-up CSS -->
+    <link rel="stylesheet" href="assets/css/sign-in-up.css" media="print" onload="this.media='all'" />
+
+    <!-- Remove unused 'webfonts/' link -->
+    <!-- If this folder is necessary for specific fonts, re-add it with proper path -->
+
     <title>Basthalk</title>
   </head>
+
   <body>
     <!-- Start Header -->
     <header>
