@@ -7,16 +7,11 @@
   border-radius: 12px;
   transition: var(--main-transition);
 }
-@media (max-width: 576px) {
-  .Intro .Section-title {
-    margin: 0px auto 50px;
-  }
-}
 .Intro .card {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 20px;
-  padding: 30px;
+  padding: 30px 10px;
 }
 .Intro .card .card-box {
   outline: none;
