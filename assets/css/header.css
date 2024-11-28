@@ -370,6 +370,7 @@ header .container {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap:20px;
   }
   .Landing-page .container {
     padding-top: 50px;
@@ -384,7 +385,7 @@ header .container {
 
 @media (max-width: 768px) {
   .Landing-page_right h2 {
-    font-size: 2.625rem;
+    font-size: 2.25rem;
     max-width:100%;
   }
   .Landing-page_right p {
@@ -410,6 +411,7 @@ header .container {
     height: calc(100vh - 80px);
     justify-content: center;
     gap: 0px;
+    padding-top: 50px;
   }
   .Landing-page_left {
     display:none;
