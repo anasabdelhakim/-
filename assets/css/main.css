@@ -122,16 +122,16 @@
     font-size: 17px;
   }
   .Intro .card .card-box i {
-    font-size: 20px;
+    font-size: 22px;
   }
   .Intro .card .card-box1 h1 {
-    font-size: 18px;
-  }
-  .Intro .card .card-box h3 {
     font-size: 20px;
   }
+  .Intro .card .card-box h3 {
+    font-size: 22px;
+  }
   .Intro .card .card-box p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .slider-content {
