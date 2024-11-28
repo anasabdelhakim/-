@@ -55,6 +55,10 @@
   color: var(--danger--color);
   background-color: transparent;
 }
+.Intro .card .card-box1 .card-box-btn:active {
+  color: var(--danger--color);
+  background-color: transparent;
+}
 .Intro .card .card-box1 .card-box-btn i {
   font-size: 18px;
   color: #111827;
@@ -63,7 +67,9 @@
 .Intro .card .card-box1 .card-box-btn:hover i {
   color: var(--danger--color);
 }
-
+.Intro .card .card-box1 .card-box-btn:active i {
+  color: var(--danger--color);
+}
 .Intro .card .card-box h3 {
   font-size: 25px;
   margin: 15px 0;
@@ -158,9 +164,17 @@
   transform: scale(1.05);
   filter: saturate(200%);
 }
-.slider-content-wrapper-box:hover .course-content {
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
+.slider-content-wrapper-box:active .image-content img {
+  transform: scale(1.05);
+  filter: saturate(200%);
+}
+.slider-content-wrapper-box:hover .image-content img {
+  transform: scale(1.05);
+  filter: saturate(200%);
+}
+.slider-content-wrapper-box:active .image-content img {
+  transform: scale(1.05);
+  filter: saturate(200%);
 }
 .slider-content-wrapper-box .course-content {
   position: relative;
@@ -293,7 +307,10 @@
   color: var(--third-color);
   background-color: transparent;
 }
-
+.show-more:active {
+  color: var(--third-color);
+  background-color: transparent;
+}
 /*Last Section*/
 .about-teacher {
   display: flex;
@@ -353,7 +370,9 @@
 .about-teacher .Landing-btn-book:hover {
   transform: scale(1.15);
 }
-
+.about-teacher .Landing-btn-book:active {
+  transform: scale(1.15);
+}
 /*Start Footer*/
 footer {
   height: 100%;
@@ -404,7 +423,9 @@ footer .container p {
 .links-social img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
 }
-
+.links-social img:active {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.35) 0px 6px 12px;
+}
 @media (max-width: 992px) {
   .about-teacher .container {
     margin: 0 10px 50px;
