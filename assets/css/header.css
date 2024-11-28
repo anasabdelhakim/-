@@ -410,8 +410,9 @@ header .container {
     justify-content: center;
     align-items: center;
     gap: 0px;
+    padding-top: 150px;
   }
-  .Landing-page_right {
+  .Landing-page_left {
     display:none;
     }
 }
