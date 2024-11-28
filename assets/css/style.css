@@ -44,6 +44,7 @@ p {
 }
 
 button {
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-weight: bold;
   cursor: pointer;
   outline: none;
