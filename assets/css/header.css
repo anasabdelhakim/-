@@ -409,9 +409,7 @@ header .container {
   .Landing-page .container {
     height: calc(100vh - 80px);
     justify-content: center;
-    align-items: center;
     gap: 0px;
-    padding:0;
   }
   .Landing-page_left {
     display:none;
