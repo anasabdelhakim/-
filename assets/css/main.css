@@ -7,9 +7,6 @@
   border-radius: 12px;
   transition: var(--main-transition);
 }
-.Intro .Section-title {
-  margin: 0 auto var(--section-outer-space);
-}
 @media (max-width: 576px) {
   .Intro .Section-title {
     margin: 0 auto 50px;
