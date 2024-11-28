@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
+    
+    <!-- Preconnect to speed up font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Optimize font loading -->
     <link
       href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
     />
-    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image (1).webp" />
-    <link rel="stylesheet" rel="preload" href="assets/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image.webp" type="image/webp" />
+
+    <!-- Consolidate and defer CSS loading -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/webfonts/" />
+
+    <!-- Avoid unused links -->
+    <!-- Removed the unused 'webfonts/' directory reference -->
+
     <title>Basthalk</title>
   </head>
   <body>
