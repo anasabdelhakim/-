@@ -5,7 +5,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--body-color);
-  z-index: 3000;
+  z-index: 1000;
   border-bottom: 3px solid transparent;
   transition: var(--main-transition), border-bottom 0.3s ease-in-out;
 }
@@ -392,9 +392,7 @@ header .container {
     height: auto;
   }
   .Landing-page .container {
-    padding-top: 50px;
-    gap: 50px;
-    flex-direction: column-reverse;
+    padding-top: var(--section-inner-space);
   }
   .Landing-page_left {
     width: 100%;
@@ -404,12 +402,15 @@ header .container {
     width: 100%;
   }
   .Landing-page_right {
-    justify-content: center;
     align-items: center;
     text-align: center;
     gap: 20px;
   }
-
+  .Landing-page .container {
+    padding-top: 50px;
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
   .Landing-page_right .Landing-btns {
     width: 100%;
     flex-direction: column;
