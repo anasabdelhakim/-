@@ -4,9 +4,6 @@
   width: 100%;
   height: 100%;
 }
-main {
-  margin-top: var(--section-outer-space);
-}
 p {
   opacity: 1 !important;
 }
