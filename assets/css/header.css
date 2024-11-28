@@ -443,7 +443,7 @@ header .container {
   }
 }
 
-@media (max-width: 476px) {
+@media (max-width: 576px) {
   .Landing-page_right h2 {
     font-size: clamp(1rem, 11.5vw, 6rem);
     max-width: 100%;
