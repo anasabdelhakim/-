@@ -408,14 +408,10 @@ header .container {
 @media (max-width: 576px) {
   .Landing-page .container {
     justify-content: center;
-    align-items: center
+    align-items: center;
     gap: 0px;
   }
   .Landing-page_right {
-    width:0;
-    display:none
-    }
-  .Landing-page_right img{
     display:none;
-  }
+    }
 }
