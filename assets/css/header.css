@@ -407,6 +407,9 @@ header .container {
 }
 
 @media (max-width: 576px) {
+  .Landing-page_right h2 {
+    font-size: 100%;
+  }
   .Landing-page .container {
     height: calc(100vh - 80px);
     justify-content: center;
