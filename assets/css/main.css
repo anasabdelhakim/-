@@ -424,7 +424,9 @@ footer .container p {
 }
 
 @media (max-width: 576px) {
-  padding: 30px 0;
+  footer .container {
+    padding: 50px 0;
+  }
   .slider-content-wrapper-box .course-content-details {
     flex-direction: column;
     justify-content: center;
