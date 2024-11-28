@@ -450,7 +450,7 @@ header .container {
   .Landing-page .container {
     height: calc(100vh - 80px);
     gap: 0px;
-    padding-top: 25px;
+    padding-top: 50px;
   }
   .Landing-page_left {
     display: none;
