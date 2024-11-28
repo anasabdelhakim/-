@@ -443,6 +443,9 @@ header .container {
 }
 
 @media (max-width: 576px) {
+  .Landing-page {
+    height: calc(100vh - 130px);
+  }
   .Landing-page_right {
     justify-content: flex-start;
   }
