@@ -61,6 +61,10 @@ p {
 .password-account a:hover {
   text-decoration: none;
 }
+.Sign-Left .password-forget a:active,
+.password-account a:hover {
+  text-decoration: none;
+}
 .Sign-Left .password-forget a,
 .password-account a {
   font-size: 15px;
@@ -181,6 +185,9 @@ p {
 .Sign-Left .Landing-btn-book:hover {
   transform: scale(1.15);
 }
+.Sign-Left .Landing-btn-book:active {
+  transform: scale(1.15);
+}
 /* Dropdown container */
 .dropdown-container {
   grid-column: 1 / span 2;
@@ -276,6 +283,9 @@ p {
   cursor: pointer;
 }
 .dropdown-option-label:hover {
+  background-color: var(--light-bg);
+}
+.dropdown-option-label:active {
   background-color: var(--light-bg);
 }
 
