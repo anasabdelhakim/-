@@ -356,10 +356,11 @@
 
 /*Start Footer*/
 footer {
+  height: 100%;
   background-color: #288ec7;
 }
 footer .container {
-  min-height: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,13 +419,10 @@ footer .container p {
     width: 100%;
     text-align: center;
   }
-  footer .container {
-    min-height: 400px;
-  }
+  
 }
 
 @media (max-width: 576px) {
-  
   .slider-content-wrapper-box .course-content-details {
     flex-direction: column;
     justify-content: center;
