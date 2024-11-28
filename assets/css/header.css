@@ -411,6 +411,7 @@ header .container {
     justify-content: center;
     align-items: center;
     gap: 0px;
+    padding:0;
   }
   .Landing-page_left {
     display:none;
