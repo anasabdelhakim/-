@@ -445,19 +445,17 @@ header .container {
 
 @media (max-width: 576px) {
   .Landing-page_right h2 {
-    font-size: clamp(40px, 12vw, 70px);
+    font-size: clamp(1rem, 11.5vw, 6rem);
     max-width: 100%;
-  }
-  .Landing-page {
-    margin-top: 15px;
   }
   .Landing-page .container {
     height: calc(100vh - 80px);
     justify-content: center;
     gap: 0px;
-    padding-top:0;
+    padding-top: 0;
   }
   .Landing-page_left {
-    display:none;
-    }
+    display: none;
+  }
 }
+
