@@ -125,6 +125,7 @@ input:-webkit-autofill:hover {
 }
 
 .Section-title h1 {
+  position: relative;
   text-align: center;
   padding: 10px 0;
   font-size: 45px;
