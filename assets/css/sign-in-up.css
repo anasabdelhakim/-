@@ -100,7 +100,12 @@ p {
   transform: translateY(-50%);
   left: 0;
 }
-
+@font-face {
+  font-family: "Segoe UI";
+  src: url('/path-to-font/SegoeUI.woff2') format('woff2'),
+       url('/path-to-font/SegoeUI.woff') format('woff');
+  font-display: swap;
+}
 .input-container {
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
