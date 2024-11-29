@@ -211,6 +211,8 @@
 }
 .slider-content-wrapper-box .course-content-title-btns {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .slider-content-wrapper-box .course-content-title-btns button {
