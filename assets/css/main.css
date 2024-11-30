@@ -151,6 +151,7 @@
 .slider-content-wrapper-box {
   cursor: pointer;
   max-width: 100%;
+  border-radius: 5px;
   overflow: hidden;
   display: none;
 }
@@ -198,7 +199,6 @@
 }
 .slider-content-wrapper-box .image-content img {
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
-  border-radius: 5px;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
