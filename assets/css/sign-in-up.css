@@ -96,8 +96,6 @@ p {
   align-items: center;
   height: 100%;
   position: absolute;
-  background-color: var(--body-color);
-  width: 40px;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
@@ -134,7 +132,7 @@ p {
 .inputs-form input {
   height: 50px;
   border: none;
-  width: 100%;
+  width: 95%;
   color: var(--tags-color);
   outline: none;
   background-color: transparent;
