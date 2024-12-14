@@ -28,62 +28,88 @@ const disableDarkmode = () => {
   if (darkmode === "active") enableDarkmode();
 })();
 
-// Ensure the toggle button exists before attaching the event listener
-if (toggleBtn) {
-  toggleBtn.addEventListener("click", function () {
-    let darkmode = localStorage.getItem("darkmode");
-    if (darkmode !== "active") {
-      enableDarkmode();
-    } else {
-      disableDarkmode();
-    }
-  });
-}
+toggleBtn.addEventListener("click", function () {
+  let darkmode = localStorage.getItem("darkmode");
+  if (darkmode !== "active") {
+    enableDarkmode();
+  } else {
+    disableDarkmode();
+  }
+});
 
-// Handle scrolling for progress bar and header border
 const handleScroll = () => {
+  // Get current scroll position and viewport/page dimensions
+  const scrollTop = window.scrollY;
+  const totalHeight = document.body.scrollHeight;
+  const viewportHeight = document.documentElement.clientHeight;
+
+  // Update scroll progress bar
   if (scrollProgressBar) {
-    const scrollTop = window.scrollY;
-    const totalHeight = document.body.scrollHeight;
-    const viewportHeight = document.documentElement.clientHeight;
     const scrollPercentage = (scrollTop / (totalHeight - viewportHeight)) * 100;
     scrollProgressBar.style.width = `${Math.round(scrollPercentage)}%`;
   }
 
-  if (header) {
-    if (window.scrollY === 0) {
-      header.classList.remove("removeBorder");
-    } else {
-      header.classList.add("removeBorder");
-    }
+  // Show/Hide header border based on scroll position
+  if (scrollTop === 0) {
+    header?.classList.remove("removeBorder");
+  } else {
+    header?.classList.add("removeBorder");
   }
 };
 
 // Attach scroll event handler (passive for better performance)
 window.addEventListener("scroll", handleScroll, { passive: true });
 
-// Handle Show More Button
-const showMoreButton = document.querySelector(".show-more");
-const boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
+//show more
+
+let showMoreButton = document.querySelector(".show-more");
 let currenListen = 3;
-
-if (showMoreButton) {
-  boxes.forEach((box, index) => {
-    box.style.display = index < currenListen ? "inline-block" : "none";
-  });
-
-  showMoreButton.addEventListener("click", function () {
-    // Show the next 6 boxes
-    for (let i = currenListen; i < currenListen + 6; i++) {
-      if (i < boxes.length) {
-        boxes[i].style.display = "inline-block";
-      }
-    }
-    currenListen += 6;
-
-    // Hide the button if all boxes are displayed
-    if (currenListen >= boxes.length) {
-      showMoreButton.style.display = "none";
-    }
-  });
+let boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
+if (boxes.length <= 3) {
+  showMoreButton.style.display = "none";
 }
+boxes.forEach((box, index) => {
+  box.style.display = index < currenListen ? "inline-block" : "none";
+});
+let profile = document.querySelectorAll(".sign-form");
+
+// Active btn on mobile screen
+document.querySelectorAll(".user-btn").forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    profile.forEach((sign) => {
+      sign.classList.toggle("active"); // Toggle the "active" class
+    });
+  });
+});
+
+// Add click event listener to each sign element
+profile.forEach((sign) => {
+  sign.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+  });
+});
+
+// Add a global click listener to the document
+document.addEventListener("click", () => {
+  profile.forEach((sign) => {
+    sign.classList.remove("active"); // Remove the "active" class
+  });
+});
+
+showMoreButton.addEventListener("click", function () {
+  // Show the next 6 boxes
+  for (let i = currenListen; i < currenListen + 6; i++) {
+    if (i < boxes.length) {
+      boxes[i].style.display = "inline-block";
+    }
+  }
+
+  // Update the current count
+  currenListen += 6;
+
+  // Hide the button if all boxes are displayed
+  if (currenListen >= boxes.length) {
+    showMoreButton.style.display = "none";
+  }
+});
