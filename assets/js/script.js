@@ -65,8 +65,10 @@ window.addEventListener("scroll", handleScroll, { passive: true });
 let showMoreButton = document.querySelector(".show-more");
 let currenListen = 3;
 let boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
-if (boxes.length <= 3) {
-  showMoreButton.style.display = "none";
+if (showMoreButton) {
+  if (boxes.length <= 3) {
+    showMoreButton.style.display = "none";
+  }
 }
 boxes.forEach((box, index) => {
   box.style.display = index < currenListen ? "inline-block" : "none";
