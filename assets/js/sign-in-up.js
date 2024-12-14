@@ -1,10 +1,9 @@
 const input = document.querySelectorAll("input");
-const inputForms = document.querySelectorAll(".inputs-form");
 const inputFields = document.querySelectorAll(".inputs-form input");
 const PasswordEyeHidden = document.getElementById("password_hidden");
 const Passwordinput = document.querySelector(".inputPassword");
 
-//Went to the another input
+// Navigate to the next input when pressing Enter
 input.forEach((input, index, inputs) => {
   input.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
@@ -17,6 +16,7 @@ input.forEach((input, index, inputs) => {
   });
 });
 
+// Focus and Blur Event Handlers for Input Fields
 inputFields.forEach((input) => {
   input.addEventListener("focus", () => {
     const parentForm = input.closest(".inputs-form");
@@ -56,6 +56,7 @@ PasswordEyeHidden.addEventListener("click", function () {
     PasswordEyeHidden.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
+
 // Add input event listener to the password input field
 Passwordinput.addEventListener("input", function () {
   if (Passwordinput.value.trim() !== "") {
