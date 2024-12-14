@@ -5,36 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
     
-    <!-- Preconnect to fonts.google.com for faster font loading -->
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Preload fonts to speed up their rendering -->
+    
+    <!-- Preload Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
-      rel="stylesheet"
       rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
       as="style"
+      onload="this.rel='stylesheet'"
     />
+    
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="assets/img/Basthalk_icon_tiny_image (1).webp"
-      type="image/webp"
-    />
-    <!-- Consolidate and defer CSS loading for better performance -->
+    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image (1).webp" type="image/webp" />
+    
+    <!-- Preload and Lazy Load Stylesheets -->
     <link rel="preload" href="assets/css/all.min.css" as="style" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Lazy load the sign-in-up CSS -->
     <link rel="stylesheet" href="assets/css/sign-in-up.css" media="print" onload="this.media='all'" />
-
-    <!-- Remove unused 'webfonts/' link -->
-    <!-- If this folder is necessary for specific fonts, re-add it with proper path -->
-
+    
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="assets/img/hero-banner.webp" as="image" />
+    
     <title>Basthalk</title>
   </head>
 
