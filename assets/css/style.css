@@ -12,16 +12,7 @@ html {
   visibility: hidden;
   scroll-behavior: smooth;
 }
-@font-face {
-  font-family: 'Segoe UI';
-  src: local('Segoe UI'), local('SegoeUI'), url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap') format('woff2');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
-  font-display: swap;
-}
+
 html.darkmode,
 html:not(.darkmode) {
   visibility: visible;
