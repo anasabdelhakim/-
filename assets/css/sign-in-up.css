@@ -17,6 +17,7 @@ p {
 
 .Sign-Right {
   position: absolute;
+  background-image: url("../img/vectorLogin.png");
   object-fit: cover;
   background-size: cover;
   background-position: center;
