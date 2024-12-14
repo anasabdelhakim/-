@@ -61,57 +61,52 @@ const handleScroll = () => {
 window.addEventListener("scroll", handleScroll, { passive: true });
 
 //show more
-
 let showMoreButton = document.querySelector(".show-more");
 let currenListen = 3;
 let boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
+
 if (showMoreButton) {
   if (boxes.length <= 3) {
     showMoreButton.style.display = "none";
   }
-}
-boxes.forEach((box, index) => {
-  box.style.display = index < currenListen ? "inline-block" : "none";
-});
-let profile = document.querySelectorAll(".sign-form");
 
-// Active btn on mobile screen
+  boxes.forEach((box, index) => {
+    box.style.display = index < currenListen ? "inline-block" : "none";
+  });
+
+  showMoreButton.addEventListener("click", function () {
+    for (let i = currenListen; i < currenListen + 6; i++) {
+      if (i < boxes.length) {
+        boxes[i].style.display = "inline-block";
+      }
+    }
+
+    currenListen += 6;
+
+    if (currenListen >= boxes.length) {
+      showMoreButton.style.display = "none";
+    }
+  });
+}
+
+let profile = document.querySelectorAll(".sign-form");
 document.querySelectorAll(".user-btn").forEach((element) => {
   element.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent the click from propagating to the document
+    event.stopPropagation();
     profile.forEach((sign) => {
-      sign.classList.toggle("active"); // Toggle the "active" class
+      sign.classList.toggle("active");
     });
   });
 });
 
-// Add click event listener to each sign element
 profile.forEach((sign) => {
   sign.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent the click from propagating to the document
+    event.stopPropagation();
   });
 });
 
-// Add a global click listener to the document
 document.addEventListener("click", () => {
   profile.forEach((sign) => {
-    sign.classList.remove("active"); // Remove the "active" class
+    sign.classList.remove("active");
   });
-});
-
-showMoreButton.addEventListener("click", function () {
-  // Show the next 6 boxes
-  for (let i = currenListen; i < currenListen + 6; i++) {
-    if (i < boxes.length) {
-      boxes[i].style.display = "inline-block";
-    }
-  }
-
-  // Update the current count
-  currenListen += 6;
-
-  // Hide the button if all boxes are displayed
-  if (currenListen >= boxes.length) {
-    showMoreButton.style.display = "none";
-  }
 });
