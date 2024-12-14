@@ -60,53 +60,62 @@ const handleScroll = () => {
 // Attach scroll event handler (passive for better performance)
 window.addEventListener("scroll", handleScroll, { passive: true });
 
-//show more
-let showMoreButton = document.querySelector(".show-more");
-let currenListen = 3;
-let boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
-
-if (showMoreButton) {
-  if (boxes.length <= 3) {
-    showMoreButton.style.display = "none";
-  }
-
-  boxes.forEach((box, index) => {
-    box.style.display = index < currenListen ? "inline-block" : "none";
-  });
-
-  showMoreButton.addEventListener("click", function () {
-    for (let i = currenListen; i < currenListen + 6; i++) {
-      if (i < boxes.length) {
-        boxes[i].style.display = "inline-block";
-      }
-    }
-
-    currenListen += 6;
-
-    if (currenListen >= boxes.length) {
-      showMoreButton.style.display = "none";
-    }
-  });
-}
 
 let profile = document.querySelectorAll(".sign-form");
+
+// Active btn on mobile screen
 document.querySelectorAll(".user-btn").forEach((element) => {
   element.addEventListener("click", (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); // Prevent the click from propagating to the document
     profile.forEach((sign) => {
-      sign.classList.toggle("active");
+      sign.classList.toggle("active"); // Toggle the "active" class
     });
   });
 });
 
+// Add click event listener to each sign element
 profile.forEach((sign) => {
   sign.addEventListener("click", (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); // Prevent the click from propagating to the document
   });
 });
 
+// Add a global click listener to the document
 document.addEventListener("click", () => {
   profile.forEach((sign) => {
-    sign.classList.remove("active");
+    sign.classList.remove("active"); // Remove the "active" class
   });
 });
+
+
+//show more 
+
+let showMoreButton = document.querySelector(".show-more");
+let currenListen = 3;
+let boxes = [...document.querySelectorAll(".slider-content-wrapper-box")];
+if (showMoreButton) {
+  if (boxes.length <= 3) {
+    showMoreButton.style.display = "none";
+  }
+}
+
+boxes.forEach((box, index) => {
+  box.style.display = index < currenListen ? "inline-block" : "none";
+});
+showMoreButton.addEventListener("click", function () {
+  // Show the next 6 boxes
+  for (let i = currenListen; i < currenListen + 6; i++) {
+    if (i < boxes.length) {
+      boxes[i].style.display = "inline-block";
+    }
+  }
+
+  // Update the current count
+  currenListen += 6;
+
+  // Hide the button if all boxes are displayed
+  if (currenListen >= boxes.length) {
+    showMoreButton.style.display = "none";
+  }
+});
+
