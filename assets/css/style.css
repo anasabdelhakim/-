@@ -8,11 +8,6 @@
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
-@font-face {
-  font-family: "Noto Kufi Arabic";
-  src: url("path-to-your-font.woff2") format("woff2");
-  font-display: swap;
-}
 html {
   visibility: hidden;
   scroll-behavior: smooth;
