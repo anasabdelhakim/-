@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
     
-    <!-- Preconnect to speed up font loading -->
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Optimize font loading: preload for faster rendering -->
+    
+    <!-- Preload Critical Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
-      rel="stylesheet"
       rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
       as="style"
+      onload="this.rel='stylesheet'"
     />
-     <!-- Favicon -->
+    
+    <!-- Favicon -->
     <link
       rel="icon"
       href="assets/img/Basthalk_icon_tiny_image (1).webp"
       type="image/webp"
     />
-    <!-- Consolidate and defer CSS loading: preload main CSS file -->
+    
+    <!-- Preload Main CSS -->
     <link rel="preload" href="assets/css/all.min.css" as="style" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     
-    <!-- Lazy load the sign-in/up CSS if possible -->
+    <!-- Lazy Load Sign-In CSS -->
     <link rel="stylesheet" href="assets/css/sign-in-up.css" media="print" onload="this.media='all'" />
     
-    <!-- Removed unused 'webfonts/' reference -->
-    <!-- If needed, add it back if this folder is being used for specific fonts -->
+    <!-- Preload LCP Element (e.g., Hero Image or Logo) -->
+    <link rel="preload" href="assets/img/hero-banner.webp" as="image" />
 
-    <title>Basthalk</title>
+    <title>Basthalk - Sign In</title>
   </head>
+
   <body>
     <!-- Start Header -->
     <header>
