@@ -4,31 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
-    
-    <!-- Preconnect to Google Fonts -->
+
+    <!-- Preconnect to Google Fonts and other necessary domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://www.google.com" />
+
+    <!-- Preload fonts to speed up rendering -->
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Kufi+Arabic:wght@100..900&family=Viga&display=swap"
       as="style"
-      onload="this.rel='stylesheet'"
+      type="text/css"
+      crossorigin="anonymous"
     />
     
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/Basthalk_icon_tiny_image (1).webp" type="image/webp" />
-    
-    <!-- Preload and Lazy Load Stylesheets -->
+    <!-- Favicon with multiple formats for better compatibility -->
+    <link
+      rel="icon"
+      href="assets/img/Basthalk_icon_tiny_image_1.webp"
+      type="image/webp"
+    />
+    <!-- Fallback PNG -->
+    <link
+      rel="icon"
+      href="assets/img/Basthalk_icon_tiny_image_1.png"
+      type="image/png"
+    />
+    <!-- Fallback ICO -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Consolidate and defer CSS loading for better performance -->
     <link rel="preload" href="assets/css/all.min.css" as="style" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/sign-in-up.css" media="print" onload="this.media='all'" />    
-    <title>Basthalk - Sign Up</title>
+
+    <!-- Lazy load the sign-in-up CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/sign-in-up.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <title>Basthalk</title>
   </head>
+
 
   <body>
     <!-- Start Header -->
